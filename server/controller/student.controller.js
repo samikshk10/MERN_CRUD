@@ -67,7 +67,6 @@ async function editStudent(req,res)
       const options = {
         new: true, 
       };
-      
       studentModel.findByIdAndUpdate(id, updateData, options)
         .then((result) => {
           if (result) {
